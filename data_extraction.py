@@ -2,7 +2,7 @@ import cv2  # for capturing videos
 import math  # for mathematical operations
 import os
 
-path = 'video/input'
+path = '/Users/suvirsingh/Movies/car2.mp4'
 
 files = []
 
@@ -13,7 +13,7 @@ for f in os.listdir(path):
 count = 0
 
 for i in range(0, len(files)):
-    videoFile = 'video/input/' + str(files[i])
+    videoFile = '/Users/suvirsingh/Movies/car2.mp4' + str(files[i])
     # print videoFile
     cap = cv2.VideoCapture(videoFile)  # capturing the video from the given path
     frameRate = cap.get(5)  # frame rate
